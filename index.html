@@ -4,7 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link href="./fonts/fonts.css" rel="stylesheet">
+    <link href="./styles/global.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="menu menu-header">    
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link text-base" href="#">Главная</a></li>
+          <li class="menu-item"><a class="menu-link text-base text-underlined" href="#">Посмотреть лоты</a></li>
+          <li class="menu-item"><a class="menu-link text-base text-underlined" href="#">Об аукционе</a></li>
+        </ul>
+      </nav>
+      <a class="header__logo">
+        <img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип проекта"
+        >
+      </a>
+
+      <!-- Мне кажется так ненорм, тег address для другого обычно используется-->
+      <address class="contacts">
+        <p class="text-base text-underlined">+9 999 555 5555</p>
+        <p class="text-base text-underlined">info@sobaka.ge</p>
+        <address class="text-base">
+          наб. Принсенграхт 263-<br>
+          265, Амстердам
+        </address>
+      </address>
+    </header>
+    <main>
+
+      <!-- Секция с кратинком и заголовком страницы на ней -->
+
+      <section class="cover">
+        <h1 class="title">ОНО ТЕБЕ НАДО</h1>
+        <div class="description">
+          <p class="cover-subtitle">АУКЦИОН ВЕЩЕЙ, ВКОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
+          <button class="button">СДЕЛАТЬ СТАВКУ</button>
+        </div>
+      </section>
+
+      <!-- Секция с карточками -->
+
+      <section class="lots">
+        <h2 class="section-title">Лоты</h2>
+        <ul class="lots-container">
+          <li class="lots-item">
+            <!-- Фоновое изображение -->
+            <a href="#" class="card-link ">
+              <article class="card">
+                <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots-item">
+            <a href="#" class="card-link .card__book">
+              <article class="card">
+                <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots-item">
+            <a href="#" class="card-link .card__picture">
+              <article class="card">
+                <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="lots-more-link text-base text-underlined">посмотреть больше</a>
+      </section>
+
+      <!-- Секция об аукционе с его описанием -->
+
+      <section class="about">
+        <div class="about-logo">
+          <img
+            class="header__logo-image"
+            src="./images/logo-black.svg"
+            alt="Логотип проекта"
+          >
+        </div>
+        <div>
+          <h2 class="section-title">Об аукционе</h2>
+          <p class="about-text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p class="about-text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <address class="contacts">
+        <p class="text-base text-underlined">+9 999 555 5555</p>
+        <p class="text-base text-underlined">info@sobaka.ge</p>
+        <address class="text-base">
+          наб. Принсенграхт 263-<br>
+          265, Амстердам
+        </address>
+      </address>
+      <nav class="menu menu-footer">    
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link text-base" href="#">Главная</a></li>
+          <li class="menu-item"><a class="menu-link text-base text-underlined" href="#">Посмотреть лоты</a></li>
+          <li class="menu-item"><a class="menu-link text-base text-underlined" href="#">Об аукционе</a></li>
+        </ul>
+      </nav>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
