@@ -3,6 +3,11 @@
   width: 100%;
   height: 293px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .menu {
@@ -10,15 +15,19 @@
 }
 
 .menu-header .menu-list {
+  display: flex;
+  gap: 25.48px;
+  margin-top: 133px;
+  margin-bottom: 138px;
   /*flex-direction: row;*/
 }
 
-.menu-list {
-
+.menu-header .menu-item {
+  list-style: none; 
 }
 
-.menu-item {
-
+.menu-header .menu-item:not(:first-child) {
+  list-style: circle;
 }
 
 .menu-link {
@@ -32,11 +41,16 @@
 }
 
 .contacts {
-
+  max-width: 240px;
+  justify-self: end;
 }
 
 .text-base {
 
+}
+
+.text-underlined {
+  text-decoration: underline;
 }
 
 .text-underlined {
@@ -46,31 +60,96 @@
 
 
 .cover {
-  width: 100%;
-  height: 757px;
   box-sizing: border-box;
   background: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: -8vw 0;
+  background-repeat: no-repeat;
+  position: relative; /* чтобы абсолютное позиционирование overlay применяось к родителю */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 165px;
 }
 
-.title {
+.cover__title {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-family: "Raleway";
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 106px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.3em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 
 }
 
-.description {
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 400;
+  word-spacing: 20px; 
+  
+}
+
+.cover__description-text {
 
 }
 
-.cover-subtitle {
+.bet-button {
+  background: none;
+  border: 1px solid white;
+  padding: 12px 32px 11px 31px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
 
 }
 
-.button {
-
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: rgb(0, 0, 0);
+  z-index: 0;
 }
 
 
 
 .lots {
+  margin: 0 auto;
   width: 1052px;
   height: 723px;
   box-sizing: border-box;
@@ -148,7 +227,9 @@
   height: 114px;
 }
 
-.about .section-title
+.about .section-title {
+
+}
 
 .about-text {
 
@@ -160,8 +241,25 @@
   width: 100%;
   height: 180px;
   box-sizing: border-box;
+  background-color: aquamarine;
 }
 
 .menu-footer .menu-list {
-  /*flex-direction: column;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: bisque;
+}
+
+.menu-footer .menu-item {
+  list-style: none; /* Убираем маркеры у пунктов меню в футере */
+}
+
+.footer__social-list-item {
+  list-style: none;
+/*  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+*/
 }

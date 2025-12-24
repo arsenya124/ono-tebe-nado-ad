@@ -12,9 +12,9 @@
     <header class="header">
       <nav class="menu menu-header">    
         <ul class="menu-list">
-          <li class="menu-item"><a class="menu-link text-base" href="#">Главная</a></li>
-          <li class="menu-item"><a class="menu-link text-base text-underlined" href="#">Посмотреть лоты</a></li>
-          <li class="menu-item"><a class="menu-link text-base text-underlined" href="#">Об аукционе</a></li>
+          <li class="menu-item"><a class="menu-link text-base" href="#">главная</a></li>
+          <li class="menu-item"><a class="menu-link text-base text-underlined menu-item-circle" href="#">посмотреть лоты</a></li>
+          <li class="menu-item"><a class="menu-link text-base text-underlined menu-item-circle" href="#">об аукционе</a></li>
         </ul>
       </nav>
       <a class="header__logo">
@@ -27,8 +27,9 @@
 
       <!-- Мне кажется так ненорм, тег address для другого обычно используется-->
       <address class="contacts">
-        <p class="text-base text-underlined">+9 999 555 5555</p>
-        <p class="text-base text-underlined">info@sobaka.ge</p>
+        <a class="text-base text-underlined" href="tel:+99995555555">+9 999 555 5555</a>
+        <br>
+        <a class="text-base text-underlined" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <address class="text-base">
           наб. Принсенграхт 263-<br>
           265, Амстердам
@@ -40,17 +41,39 @@
       <!-- Секция с кратинком и заголовком страницы на ней -->
 
       <section class="cover">
-        <h1 class="title">ОНО ТЕБЕ НАДО</h1>
-        <div class="description">
-          <p class="cover-subtitle">АУКЦИОН ВЕЩЕЙ, ВКОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
-          <button class="button">СДЕЛАТЬ СТАВКУ</button>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <!-- ОНО: выравнено по левому краю -->
+          <span class="aligned-text aligned-text_left">
+            <span class="letter-spacing-extended">
+              ОН<span class="no-letter-spacing">О</span>
+            </span>
+          </span>
+
+          <!-- ТЕБЕ: по центру -->
+          <span class="aligned-text aligned-text_center">
+            <span class="letter-spacing-extended">
+              ТЕБ<span class="no-letter-spacing">Е</span>
+            </span>
+          </span>
+
+          <!-- НАДО: по правому краю -->
+          <span class="aligned-text aligned-text_right">
+            <span class="letter-spacing-extended">
+              НАД<span class="no-letter-spacing">О</span>
+            </span>
+          </span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
+          <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
         </div>
       </section>
 
       <!-- Секция с карточками -->
 
       <section class="lots">
-        <h2 class="section-title">Лоты</h2>
+        <h2 class="section-title">ЛОТЫ</h2>
         <ul class="lots-container">
           <li class="lots-item">
             <!-- Фоновое изображение -->
@@ -101,8 +124,8 @@
     </main>
     <footer class="footer">
       <address class="contacts">
-        <p class="text-base text-underlined">+9 999 555 5555</p>
-        <p class="text-base text-underlined">info@sobaka.ge</p>
+        <a class="text-base text-underlined" href="tel:+99995555555">+9 999 555 5555<br></a>
+        <a class="text-base text-underlined" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <address class="text-base">
           наб. Принсенграхт 263-<br>
           265, Амстердам
@@ -115,10 +138,10 @@
           <li class="menu-item"><a class="menu-link text-base text-underlined" href="#">Об аукционе</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item"><a class="footer__social-link" href="#"></a></li>
+        <li class="footer__social-list-item"><a class="footer__social-link" href="#"></a></li>
+        <li class="footer__social-list-item"><a class="footer__social-link" href="#"></a></li>
       </ul>
     </footer>
   </body>
