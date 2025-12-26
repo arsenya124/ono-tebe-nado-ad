@@ -247,7 +247,8 @@
   box-sizing: border-box;
   margin: 120px auto 180px auto;
   display: grid;
-  grid-template-columns: 334px 718px;
+  grid-template-columns: 334px 693px;
+  gap: 25px;
 }
 
 /* Контейнер для логотипа и черного круга под ним */
