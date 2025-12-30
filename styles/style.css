@@ -46,6 +46,11 @@
 }
 
 .text-base {
+  font-family: "Raleway";
+  line-height: 24.3px;
+  font-size: 18px;
+  font-weight: 400;
+
 
 }
 
@@ -66,10 +71,8 @@
   background-position: -8vw 0;
   background-repeat: no-repeat;
   position: relative; /* чтобы абсолютное позиционирование overlay применяось к родителю */
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-top: 165px;
+  padding: 165px 50px 50px;
+
 }
 
 .cover__title {
@@ -80,6 +83,8 @@
   font-size: 100px;
   font-weight: bold;
   margin-bottom: 106px;
+  display: block;
+  min-height: 385px;
 }
 
 .aligned-text {
@@ -323,9 +328,10 @@
 }
 
 .menu-footer .menu-list {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .menu-footer .menu-item {
